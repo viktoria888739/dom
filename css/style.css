@@ -1,75 +1,101 @@
 @import url('reset.css');
 @import url('font.css');
-@keyframes jump{
-    0%, 100%{
+
+@keyframes jump {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
-    50%{
+
+    50% {
         transform: translateY(-30px);
     }
 }
-@keyframes shake{
-    0%, 100%{
+
+@keyframes shake {
+
+    0%,
+    100% {
         transform: rotate(0deg);
     }
-    
-    50%{
+
+    50% {
         transform: rotate(6deg);
     }
 }
-@keyframes shake2{
-    0%, 100%{
+
+@keyframes shake2 {
+
+    0%,
+    100% {
         transform: rotate(-3deg);
     }
-    
-    50%{
+
+    50% {
         transform: rotate(3deg);
     }
 }
-@keyframes shake3{
-    0%, 100%{
+
+@keyframes shake3 {
+
+    0%,
+    100% {
         transform: rotate(-9deg);
     }
-    
-    50%{
+
+    50% {
         transform: rotate(-12deg);
     }
 }
-@keyframes shake4{
-    0%, 100%{
+
+@keyframes shake4 {
+
+    0%,
+    100% {
         transform: rotate(14deg);
     }
-    
-    50%{
+
+    50% {
         transform: rotate(19deg);
     }
 }
 
-@keyframes rot{
-    0%, 100%{
+@keyframes rot {
+
+    0%,
+    100% {
         transform: rotate(-7deg);
     }
-    50%{
+
+    50% {
         transform: rotate(-15deg)
     }
-    
+
 }
-@keyframes rot2{
-    0%, 100%{
+
+@keyframes rot2 {
+
+    0%,
+    100% {
         transform: rotate(4deg);
     }
-    50%{
+
+    50% {
         transform: rotate(10deg);
     }
 }
+
 * {
     font-family: 'Peace Sans', sans-serif;
     font-weight: 700;
 }
-body{
+
+body {
     overflow-x: hidden;
     width: 1560px;
 }
+
 .red_bg {
     background-color: #E61E1E;
 }
@@ -93,7 +119,8 @@ body{
     font-size: 23px;
     line-height: 156%;
 }
-.par-card{
+
+.par-card {
     color: #232323;
     font-size: 23px;
     line-height: 156%;
@@ -180,11 +207,12 @@ body{
     left: 92px;
     top: 97px;
 }
-.glyphs{
+
+.glyphs {
     padding-left: 0px;
     padding-top: 120px;
     padding-right: 700px;
-    padding-bottom: 700px;  
+    padding-bottom: 700px;
     align-items: left;
     gap: 64px;
     display: flex;
@@ -252,7 +280,10 @@ h2 {
     left: 425px;
     top: -28px;
     transform: rotate(-90deg);
-    z-index: 3;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #card4 {
@@ -321,7 +352,7 @@ h2 {
     z-index: 2;
     padding: 0;
     transform: rotate(-11deg);
-    
+
 }
 
 #card13 {
@@ -436,7 +467,7 @@ h2 {
     top: 154px;
 }
 
-.rhomb2{
+.rhomb2 {
     position: absolute;
     left: 1233px;
     top: 275px;
@@ -469,8 +500,9 @@ h2 {
     max-height: 722px;
     z-index: 5;
 }
-.hexagon-grid2{
-    position:absolute;
+
+.hexagon-grid2 {
+    position: absolute;
     top: 554px;
     left: 205px;
     display: flex;
@@ -481,7 +513,7 @@ h2 {
     z-index: 5;
 }
 
-.hexagon-wight{
+.hexagon-wight {
     background-image: url("../assets/font/images/wight.svg");
     background-position: center;
     background-repeat: no-repeat;
@@ -491,10 +523,10 @@ h2 {
     align-items: center;
     justify-content: center;
     z-index: 5;
-    
+
 }
 
-.hexagon-black{
+.hexagon-black {
     background-image: url("../assets/font/images/black.svg");
     background-size: contain;
     background-position: center;
@@ -507,19 +539,20 @@ h2 {
     z-index: 5;
 }
 
-.hexpblack{
+.hexpblack {
     color: #232323;
     font-size: 35px;
     margin-top: 5px;
-   
+
 }
+
 .hexpblack:hover {
     transform: scale(3ms);
     font-size: 60px;
     border-radius: 5px;
 }
 
-.hexpwhite{
+.hexpwhite {
     color: #F3E9CE;
     font-size: 35px;
     margin-top: 5px;
@@ -534,39 +567,49 @@ h2 {
     font-size: 60px;
     border-radius: 5px;
 }
-.llaststrok{
+
+.llaststrok {
     display: flex;
     margin-left: 91px;
     gap: 3px;
 }
-.laststrok{
+
+.laststrok {
     display: flex;
     margin-left: 179px;
     gap: 3px;
 }
-.anymshake{
+
+.anymshake {
     animation: shake 3s ease-in-out infinite;
 }
-.anymjump{
+
+.anymjump {
     animation: jump 3s ease-in-out infinite;
 }
-.large{
+
+.large {
     animation: uv 3s ease-in-out infinite;
 }
-.rotat{
+
+.rotat {
     animation: rot 3s ease-in-out infinite;
 }
-.rotat2{
+
+.rotat2 {
     animation: rot2 3s ease-in-out infinite;
 }
-.anymshake2{
+
+.anymshake2 {
     animation: shake2 2s ease-in-out infinite;
 }
-.anymshake3{
-        animation: shake3 2s ease-in-out infinite;
+
+.anymshake3 {
+    animation: shake3 2s ease-in-out infinite;
 }
-.anymshake4{
-        animation: shake4 2s ease-in-out infinite;
+
+.anymshake4 {
+    animation: shake4 2s ease-in-out infinite;
 }
 
 .footer {
@@ -595,26 +638,30 @@ h2 {
     align-items: flex-end;
     gap: 10px;
 }
-.card-content{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(90deg);
-    color: #232323;
-    font-size: 58px;
-    line-height: 95%;
-    margin: 0;
-    text-align: center;
 
+.card-content {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    transform: rotate(90deg);
+    
 }
-.card-description{
+
+.card-description {
     color: #232323;
     font-size: 58px;
     line-height: 95%;
-    margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
 }
-.card-text{
+
+.card-text {
     color: #232323;
     font-size: 23px;
     line-height: 136%;
